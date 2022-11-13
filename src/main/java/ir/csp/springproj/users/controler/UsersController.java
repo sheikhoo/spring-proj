@@ -1,6 +1,7 @@
 package ir.csp.springproj.users.controler;
 
 import ir.csp.springproj.users.model.Users;
+import ir.csp.springproj.users.model.UsersModel;
 import ir.csp.springproj.users.service.UsersService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -21,12 +22,12 @@ public class UsersController {
     }
 
     @PostMapping(value = "/new_user",produces = "application/json")
-    public Users newUser(@RequestBody Users user){
+    public UsersModel newUser(@RequestBody UsersModel user){
         return usersService.NewUser(user);
     }
 
     @GetMapping(value = "/get_all",produces = "application/json")
-    public List<Users> getAllUsers(){
+    public List<UsersModel> getAllUsers(){
         return usersService.getAllUsers();
     }
 }
