@@ -11,7 +11,6 @@ http://localhost:8090/get_all (GET)
 http://localhost:8090/new_user (POST)
 
 ```
-body:
 {
     "firstName":"M.Sadegh",
     "lastName":"Sheikh Zahedi",
