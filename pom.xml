@@ -16,6 +16,7 @@
 	<description>spring-proj</description>
 	<properties>
 		<java.version>11</java.version>
+		<start-class>ir.csp.springproj.SpringProjApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
